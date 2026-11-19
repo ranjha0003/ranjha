@@ -159,13 +159,17 @@ footer li{list-style:none;margin-bottom:.4rem}footer ul{padding:0}footer li a{op
  .jin .px{aspect-ratio:auto}
  .jin .j-big{grid-column:1;grid-row:1/3;aspect-ratio:auto}
 }
-/* portrait hero slide: show the whole photo on wide screens */
-.sl.pt>img{object-position:center 22%}
-@media(min-aspect-ratio:1/1){
- .sl.pt{background:var(--ox)}
- .sl.pt::before{content:"";position:absolute;inset:-6%;background:var(--bg) center/cover;filter:blur(36px) brightness(.5) saturate(1.2)}
- .sl.pt>img{position:relative;object-fit:contain;object-position:74% center}
- .sl.pt .cap{left:6vw;right:auto;text-align:left;max-width:42vw;bottom:16vh;padding:0}
- .sl.pt h2{font-size:clamp(2.2rem,5vw,4.6rem)}
-}
 #new h2{font-size:clamp(2.2rem,4vw,3.6rem)}
+/* first hero slide: keep both faces in frame (same full-bleed style as the other slides) */
+.sl img.h0{object-position:center 24%}
+@media(min-width:992px){.sl img.h0{object-position:center 22%}}
+@media(max-height:520px) and (min-aspect-ratio:1/1){#hero{min-height:0}}
+
+/* Vows reveal: visible by default; only hidden while JS is about to reveal it */
+.js .vows .v{clip-path:inset(0 0 100% 0);transition:flex 1s cubic-bezier(.7,0,.2,1),height .7s cubic-bezier(.7,0,.2,1),clip-path 1.3s cubic-bezier(.16,1,.3,1)}
+.js .vows.in .v{clip-path:inset(0 0 0 0)}
+.js .vows.in .v:nth-child(2){transition-delay:0s,0s,.12s}
+.js .vows.in .v:nth-child(3){transition-delay:0s,0s,.24s}
+.js .vows.in .v:nth-child(4){transition-delay:0s,0s,.36s}
+.js .vows.in .v:nth-child(5){transition-delay:0s,0s,.48s}
+@media(prefers-reduced-motion:reduce){.js .vows .v{clip-path:none}}
