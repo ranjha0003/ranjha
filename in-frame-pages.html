@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>In Frame — Card to Page Mapping</title>
+<style>
+:root{--bg:#1d060d;--panel:#2a0b16;--line:rgba(201,161,95,.35);--gold:#c9a15f;--text:#fbf3ea;--muted:#d9c9bd}
+@media (prefers-color-scheme:light){:root{--bg:#fbf3ea;--panel:#fff;--line:rgba(91,26,51,.25);--gold:#8a5a1c;--text:#3a0d1c;--muted:#6b4a55}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:400 16px/1.6 Georgia,'Times New Roman',serif;padding:2rem 1rem 4rem}
+main{max-width:760px;margin:0 auto}
+h1{font-weight:400;font-size:clamp(1.8rem,5vw,2.6rem);margin:0 0 .3rem;letter-spacing:.02em}
+.sub{color:var(--muted);margin:0 0 1.8rem}
+.wrap{overflow-x:auto;border:1px solid var(--line);background:var(--panel)}
+table{width:100%;border-collapse:collapse;min-width:480px}
+th,td{padding:.7rem 1rem;text-align:left;border-bottom:1px solid var(--line)}
+th{font-weight:600;color:var(--gold);font-size:.9rem}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+tbody tr:last-child td{border-bottom:0}
+tfoot td{font-weight:700;border-top:2px solid var(--gold);border-bottom:0}
+a{color:inherit;text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:3px;word-break:break-all}
+a:hover,a:focus-visible{color:var(--gold)}
+h2{font-weight:400;font-size:1.3rem;margin:2.2rem 0 .6rem}
+ul{padding-left:1.2rem;color:var(--muted)}li{margin-bottom:.4rem}
+</style>
+</head>
+<body>
+<main>
+<h1>In Frame — Card to Page Mapping</h1>
+<p class="sub">Each scroll card in the home page's In Frame section opens its own page.</p>
+<div class="wrap">
+<table>
+<thead><tr><th>Card</th><th>Page</th><th class="n">Photos</th></tr></thead>
+<tbody>
+<tr><td>The Crimson Saree</td><td><a href="frame-crimson-saree.html">frame-crimson-saree.html</a></td><td class="n">6</td></tr>
+<tr><td>Emerald Drape</td><td><a href="frame-emerald-drape.html">frame-emerald-drape.html</a></td><td class="n">4</td></tr>
+<tr><td>Rose Sequin</td><td><a href="frame-rose-sequin.html">frame-rose-sequin.html</a></td><td class="n">4</td></tr>
+<tr><td>Garnet Slip</td><td><a href="frame-garnet-slip.html">frame-garnet-slip.html</a></td><td class="n">3</td></tr>
+<tr><td>Orchid Bouquet</td><td><a href="frame-orchid-bouquet.html">frame-orchid-bouquet.html</a></td><td class="n">3</td></tr>
+<tr><td>Smoke Mesh</td><td><a href="frame-smoke-mesh.html">frame-smoke-mesh.html</a></td><td class="n">4</td></tr>
+<tr><td>Jade Sequin</td><td><a href="frame-jade-sequin.html">frame-jade-sequin.html</a></td><td class="n">4</td></tr>
+<tr><td>Sky Shimmer</td><td><a href="frame-sky-shimmer.html">frame-sky-shimmer.html</a></td><td class="n">4</td></tr>
+<tr><td>Black &amp; Burgundy</td><td><a href="frame-black-burgundy.html">frame-black-burgundy.html</a></td><td class="n">4</td></tr>
+<tr><td>Scarlet Knit</td><td><a href="frame-scarlet-knit.html">frame-scarlet-knit.html</a></td><td class="n">3</td></tr>
+<tr><td>Golden Hour</td><td><a href="frame-golden-hour.html">frame-golden-hour.html</a></td><td class="n">10</td></tr>
+<tr><td>Floral Red</td><td><a href="frame-floral-red.html">frame-floral-red.html</a></td><td class="n">4</td></tr>
+<tr><td>Garden Walk</td><td><a href="frame-garden-walk.html">frame-garden-walk.html</a></td><td class="n">4</td></tr>
+<tr><td>Champagne Day</td><td><a href="frame-champagne-day.html">frame-champagne-day.html</a></td><td class="n">17</td></tr>
+</tbody>
+<tfoot><tr><td>Total</td><td>14 pages</td><td class="n">74</td></tr></tfoot>
+</table>
+</div>
+<h2>Notes</h2>
+<ul>
+<li>Champagne Day photos come from <code>assets/img</code> (3764–3844), not the uploaded zip. 3 of its 17 photos are in the "With Friends" row.</li>
+<li>Not linked to any card: 0011, 0012, 0013, 0015 (red lace dress and roses) and 0049, 0050, 0051, 0053 (flower arch).</li>
+</ul>
+</main>
+</body>
+</html>
